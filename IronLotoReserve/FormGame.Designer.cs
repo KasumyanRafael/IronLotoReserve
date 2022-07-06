@@ -28,20 +28,326 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.menuStripSettings = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItemGame = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemUsers = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemStopOrGo = new System.Windows.Forms.ToolStripMenuItem();
+            this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemInformation = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelNoWayGamer2 = new System.Windows.Forms.Label();
+            this.labelNoWayGamer1 = new System.Windows.Forms.Label();
+            this.labelPause = new System.Windows.Forms.Label();
+            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
+            this.labelSecondGamer = new System.Windows.Forms.Label();
+            this.labelSecondGamerCount = new System.Windows.Forms.Label();
+            this.labelFirstGamer = new System.Windows.Forms.Label();
+            this.labelFirstGamerCount = new System.Windows.Forms.Label();
+            this.dataGridViewGamer1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewGamer2 = new System.Windows.Forms.DataGridView();
+            this.timerChangePicture = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuStripSettings.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGamer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGamer2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // menuStripSettings
+            // 
+            this.menuStripSettings.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menuStripSettings.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemGame,
+            this.информацияToolStripMenuItem});
+            this.menuStripSettings.Location = new System.Drawing.Point(0, 0);
+            this.menuStripSettings.Name = "menuStripSettings";
+            this.menuStripSettings.Size = new System.Drawing.Size(1473, 24);
+            this.menuStripSettings.TabIndex = 28;
+            this.menuStripSettings.Text = "menuStrip1";
+            // 
+            // ToolStripMenuItemGame
+            // 
+            this.ToolStripMenuItemGame.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.выходToolStripMenuItem,
+            this.ToolStripMenuItemStopOrGo});
+            this.ToolStripMenuItemGame.Name = "ToolStripMenuItemGame";
+            this.ToolStripMenuItemGame.Size = new System.Drawing.Size(46, 20);
+            this.ToolStripMenuItemGame.Text = "Игра";
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemExit,
+            this.ToolStripMenuItemUsers,
+            this.ToolStripMenuItemMenu});
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.выходToolStripMenuItem.Text = "Выход";
+            // 
+            // ToolStripMenuItemExit
+            // 
+            this.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
+            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(195, 22);
+            this.ToolStripMenuItemExit.Text = "Из приложения";
+            this.ToolStripMenuItemExit.Click += new System.EventHandler(this.ToolStripMenuItemExit_Click);
+            // 
+            // ToolStripMenuItemUsers
+            // 
+            this.ToolStripMenuItemUsers.Name = "ToolStripMenuItemUsers";
+            this.ToolStripMenuItemUsers.Size = new System.Drawing.Size(195, 22);
+            this.ToolStripMenuItemUsers.Text = "Смена пользователей";
+            this.ToolStripMenuItemUsers.Click += new System.EventHandler(this.ToolStripMenuItemUsers_Click);
+            // 
+            // ToolStripMenuItemMenu
+            // 
+            this.ToolStripMenuItemMenu.Name = "ToolStripMenuItemMenu";
+            this.ToolStripMenuItemMenu.Size = new System.Drawing.Size(195, 22);
+            this.ToolStripMenuItemMenu.Text = "Меню";
+            this.ToolStripMenuItemMenu.Click += new System.EventHandler(this.ToolStripMenuItemMenu_Click);
+            // 
+            // ToolStripMenuItemStopOrGo
+            // 
+            this.ToolStripMenuItemStopOrGo.Name = "ToolStripMenuItemStopOrGo";
+            this.ToolStripMenuItemStopOrGo.Size = new System.Drawing.Size(109, 22);
+            this.ToolStripMenuItemStopOrGo.Text = "Пауза";
+            this.ToolStripMenuItemStopOrGo.Click += new System.EventHandler(this.ToolStripMenuItemStopOrGo_Click);
+            // 
+            // информацияToolStripMenuItem
+            // 
+            this.информацияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemInformation});
+            this.информацияToolStripMenuItem.Name = "информацияToolStripMenuItem";
+            this.информацияToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.информацияToolStripMenuItem.Text = "Информация";
+            // 
+            // ToolStripMenuItemInformation
+            // 
+            this.ToolStripMenuItemInformation.Name = "ToolStripMenuItemInformation";
+            this.ToolStripMenuItemInformation.Size = new System.Drawing.Size(118, 22);
+            this.ToolStripMenuItemInformation.Text = "Об игре";
+            this.ToolStripMenuItemInformation.Click += new System.EventHandler(this.ToolStripMenuItemInformation_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.labelNoWayGamer2);
+            this.panel1.Controls.Add(this.labelNoWayGamer1);
+            this.panel1.Controls.Add(this.labelPause);
+            this.panel1.Controls.Add(this.pictureBoxShow);
+            this.panel1.Controls.Add(this.labelSecondGamer);
+            this.panel1.Controls.Add(this.labelSecondGamerCount);
+            this.panel1.Controls.Add(this.labelFirstGamer);
+            this.panel1.Controls.Add(this.labelFirstGamerCount);
+            this.panel1.Controls.Add(this.dataGridViewGamer1);
+            this.panel1.Controls.Add(this.dataGridViewGamer2);
+            this.panel1.Location = new System.Drawing.Point(12, 44);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1449, 572);
+            this.panel1.TabIndex = 29;
+            // 
+            // labelNoWayGamer2
+            // 
+            this.labelNoWayGamer2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelNoWayGamer2.BackColor = System.Drawing.Color.White;
+            this.labelNoWayGamer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNoWayGamer2.ForeColor = System.Drawing.Color.Black;
+            this.labelNoWayGamer2.Location = new System.Drawing.Point(1073, 262);
+            this.labelNoWayGamer2.Name = "labelNoWayGamer2";
+            this.labelNoWayGamer2.Size = new System.Drawing.Size(199, 126);
+            this.labelNoWayGamer2.TabIndex = 29;
+            this.labelNoWayGamer2.Text = "ход невозможен";
+            this.labelNoWayGamer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNoWayGamer2.Visible = false;
+            // 
+            // labelNoWayGamer1
+            // 
+            this.labelNoWayGamer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelNoWayGamer1.BackColor = System.Drawing.Color.White;
+            this.labelNoWayGamer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNoWayGamer1.ForeColor = System.Drawing.Color.Black;
+            this.labelNoWayGamer1.Location = new System.Drawing.Point(45, 304);
+            this.labelNoWayGamer1.Name = "labelNoWayGamer1";
+            this.labelNoWayGamer1.Size = new System.Drawing.Size(220, 126);
+            this.labelNoWayGamer1.TabIndex = 28;
+            this.labelNoWayGamer1.Text = "ход невозможен";
+            this.labelNoWayGamer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNoWayGamer1.Visible = false;
+            // 
+            // labelPause
+            // 
+            this.labelPause.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelPause.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labelPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPause.ForeColor = System.Drawing.Color.Black;
+            this.labelPause.Location = new System.Drawing.Point(679, 24);
+            this.labelPause.Name = "labelPause";
+            this.labelPause.Size = new System.Drawing.Size(98, 63);
+            this.labelPause.TabIndex = 27;
+            this.labelPause.Text = "пауза";
+            this.labelPause.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPause.Visible = false;
+            // 
+            // pictureBoxShow
+            // 
+            this.pictureBoxShow.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBoxShow.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBoxShow.Location = new System.Drawing.Point(512, 253);
+            this.pictureBoxShow.Name = "pictureBoxShow";
+            this.pictureBoxShow.Size = new System.Drawing.Size(386, 288);
+            this.pictureBoxShow.TabIndex = 18;
+            this.pictureBoxShow.TabStop = false;
+            // 
+            // labelSecondGamer
+            // 
+            this.labelSecondGamer.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelSecondGamer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.labelSecondGamer.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSecondGamer.ForeColor = System.Drawing.Color.White;
+            this.labelSecondGamer.Location = new System.Drawing.Point(1138, 112);
+            this.labelSecondGamer.Name = "labelSecondGamer";
+            this.labelSecondGamer.Size = new System.Drawing.Size(134, 32);
+            this.labelSecondGamer.TabIndex = 25;
+            this.labelSecondGamer.Text = "_ _";
+            this.labelSecondGamer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSecondGamerCount
+            // 
+            this.labelSecondGamerCount.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelSecondGamerCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.labelSecondGamerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSecondGamerCount.ForeColor = System.Drawing.Color.White;
+            this.labelSecondGamerCount.Location = new System.Drawing.Point(1138, 43);
+            this.labelSecondGamerCount.Name = "labelSecondGamerCount";
+            this.labelSecondGamerCount.Size = new System.Drawing.Size(134, 69);
+            this.labelSecondGamerCount.TabIndex = 24;
+            this.labelSecondGamerCount.Text = "0";
+            this.labelSecondGamerCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelFirstGamer
+            // 
+            this.labelFirstGamer.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelFirstGamer.BackColor = System.Drawing.Color.Blue;
+            this.labelFirstGamer.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFirstGamer.ForeColor = System.Drawing.Color.White;
+            this.labelFirstGamer.Location = new System.Drawing.Point(155, 117);
+            this.labelFirstGamer.Name = "labelFirstGamer";
+            this.labelFirstGamer.Size = new System.Drawing.Size(134, 32);
+            this.labelFirstGamer.TabIndex = 23;
+            this.labelFirstGamer.Text = "_ _";
+            this.labelFirstGamer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelFirstGamerCount
+            // 
+            this.labelFirstGamerCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelFirstGamerCount.BackColor = System.Drawing.Color.Blue;
+            this.labelFirstGamerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFirstGamerCount.ForeColor = System.Drawing.Color.White;
+            this.labelFirstGamerCount.Location = new System.Drawing.Point(155, 52);
+            this.labelFirstGamerCount.Name = "labelFirstGamerCount";
+            this.labelFirstGamerCount.Size = new System.Drawing.Size(134, 69);
+            this.labelFirstGamerCount.TabIndex = 21;
+            this.labelFirstGamerCount.Text = "0";
+            this.labelFirstGamerCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridViewGamer1
+            // 
+            this.dataGridViewGamer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dataGridViewGamer1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewGamer1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGamer1.ColumnHeadersVisible = false;
+            this.dataGridViewGamer1.Enabled = false;
+            this.dataGridViewGamer1.Location = new System.Drawing.Point(0, 201);
+            this.dataGridViewGamer1.Name = "dataGridViewGamer1";
+            this.dataGridViewGamer1.ReadOnly = true;
+            this.dataGridViewGamer1.RowHeadersVisible = false;
+            this.dataGridViewGamer1.Size = new System.Drawing.Size(320, 480);
+            this.dataGridViewGamer1.TabIndex = 16;
+            // 
+            // dataGridViewGamer2
+            // 
+            this.dataGridViewGamer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewGamer2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewGamer2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGamer2.ColumnHeadersVisible = false;
+            this.dataGridViewGamer2.Enabled = false;
+            this.dataGridViewGamer2.Location = new System.Drawing.Point(969, 194);
+            this.dataGridViewGamer2.Name = "dataGridViewGamer2";
+            this.dataGridViewGamer2.ReadOnly = true;
+            this.dataGridViewGamer2.RowHeadersVisible = false;
+            this.dataGridViewGamer2.Size = new System.Drawing.Size(320, 480);
+            this.dataGridViewGamer2.TabIndex = 18;
+            // 
+            // timerChangePicture
+            // 
+            this.timerChangePicture.Tick += new System.EventHandler(this.timerChangePicture_Tick);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(0, 668);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1473, 23);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Раунд 1";
             // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1473, 691);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStripSettings);
+            this.KeyPreview = true;
             this.Name = "FormGame";
             this.Text = "FormGame";
             this.Load += new System.EventHandler(this.FormGame_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormGame_KeyDown);
+            this.menuStripSettings.ResumeLayout(false);
+            this.menuStripSettings.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGamer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGamer2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menuStripSettings;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemGame;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemExit;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemUsers;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemMenu;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemStopOrGo;
+        private System.Windows.Forms.ToolStripMenuItem информацияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemInformation;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelNoWayGamer2;
+        private System.Windows.Forms.Label labelNoWayGamer1;
+        private System.Windows.Forms.Label labelPause;
+        private System.Windows.Forms.PictureBox pictureBoxShow;
+        private System.Windows.Forms.Label labelSecondGamer;
+        private System.Windows.Forms.Label labelSecondGamerCount;
+        private System.Windows.Forms.Label labelFirstGamer;
+        private System.Windows.Forms.Label labelFirstGamerCount;
+        private System.Windows.Forms.DataGridView dataGridViewGamer1;
+        private System.Windows.Forms.DataGridView dataGridViewGamer2;
+        private System.Windows.Forms.Timer timerChangePicture;
+        private System.Windows.Forms.Label label1;
     }
 }
