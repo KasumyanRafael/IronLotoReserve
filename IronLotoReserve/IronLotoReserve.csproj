@@ -46,14 +46,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormDirections.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormDirections.Designer.cs">
+      <DependentUpon>FormDirections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIntroduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIntroduction.Designer.cs">
+      <DependentUpon>FormIntroduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Word.cs" />
+    <EmbeddedResource Include="FormDirections.resx">
+      <DependentUpon>FormDirections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntroduction.resx">
+      <DependentUpon>FormIntroduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +107,1113 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dictionary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p3ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p3irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p3ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p6ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p6irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p6ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p9ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p9irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p9ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p10ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p10irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p10ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p11ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p11irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p11ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p12ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p12irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p12ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p13ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p13irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p13ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p14ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p14irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p14ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p15ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p15irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p15ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p16ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p16irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p16ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p17ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p17irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p17ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p18ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p18irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p18ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p19ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p19irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p19ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p20ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p20irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p20ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p21ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p21irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p21ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p22ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p22irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p22ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p23ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p23irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p23ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p24ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p24irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p24ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p25ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p25irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p25ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p26ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p26irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p26ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p27ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p27irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p27ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p28ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p28irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p28ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p29ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p29irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p29ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p30ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p30irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p30ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p31ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p31irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p31ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p32ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p32irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p32ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p33ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p33irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p33ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p34ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p34irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p34ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p35ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p35irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p35ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p36ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p36irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p36ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p37ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p37irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p37ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p38ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p38irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p38ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p39ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p39irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p39ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p40ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p40irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p40ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p41ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p41irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p41ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p42ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p42irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p42ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p43ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p43irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p43ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p44ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p44irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p44ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p45ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p45irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p45ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p46ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p46irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p46ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p47ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p47irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p47ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p48ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p48irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p48ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p49ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p49irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p49ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p50ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p50irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p50ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p51ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p51irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p51ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p52ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p52irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p52ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p53ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p53irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p53ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p54ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p54irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p54ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p55ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p55irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p55ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p56ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p56irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p56ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p57ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p57irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p57ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p58ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p58irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p58ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p59ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p59irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p59ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p60ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p60irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p60ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p61ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p61irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p61ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p62ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p62irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p62ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p63ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p63irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p63ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p64ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p64irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p64ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p65ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p65irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p65ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p66ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p66irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p66ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p67ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p67irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p67ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p68ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p68irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p68ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p69ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p69irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p69ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p70ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p70irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p70ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p71ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p71irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p71ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p72ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p72irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p72ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p73ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p73irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p73ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p74ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p74irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p74ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p75ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p75irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p75ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p76ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p76irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p76ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p77ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p77irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p77ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p78ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p78irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p78ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p79ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p79irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p79ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p80ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p80irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p80ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p81ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p81irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p81ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p82ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p82irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p82ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p83ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p83irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p83ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p84ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p84irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p84ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p85ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p85irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p85ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p86ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p86irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p86ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p87ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p87irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p87ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p88ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p88irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p88ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p89ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p89irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p89ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p90ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p90irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p90ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p91ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p91irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p91ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p92ir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p92irword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p92ru.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

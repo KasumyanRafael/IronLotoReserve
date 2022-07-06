@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IronLotoReserve
 {
-    public partial class Form1 : Form
+    public partial class FormDirections : Form
     {
-        public Form1()
+        public FormDirections()
         {
             InitializeComponent();
         }
